@@ -1,9 +1,9 @@
 Pipeline {
     Agent any
     Stages {
-        Stage ('Build') {
+        Stage  {
             steps {
-                    echo 'Bhuild phase...'
+              sh echo 'Bhuild phase...'
                     }
                     }
                     }
