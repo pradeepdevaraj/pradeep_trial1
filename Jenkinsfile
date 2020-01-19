@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        Stage  {
+        stage  {
             steps {
               sh echo 'Bhuild phase...'
                     }
