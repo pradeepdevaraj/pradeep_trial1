@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage  {
             
-              sh echo 'Bhuild phase...'
+              echo 'Bhuild phase...'
                     }
                     }
                     }
