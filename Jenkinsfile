@@ -2,17 +2,28 @@ pipeline {
 agent none
 stages { 
 	stage ('all shit') {
-  parallel {
+  
         stage('Build') {
 		
 		 agent { label 'master' }
-            steps {
+		 parallel {
+		 
+            steps ('build 1.1') {
                 
 		    script{
 			    echo 'Building..'
 		             sleep 20
 		    	  }
 				 }
+				 
+			steps ('build 1.2') {
+                
+		    script{
+			    echo 'Building 22..'
+		             sleep 20
+		    	  }
+				}
+			}
 		}
 				
 				
@@ -39,5 +50,5 @@ stages {
 		}	
 		}
 		}
-		}
+		
 	
