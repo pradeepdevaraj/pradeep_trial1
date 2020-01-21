@@ -7,7 +7,7 @@ stages {
                 
 		    script{
 			    echo 'Building..'
-		             sleep 120
+		             sleep 20
 		    	  }
 				 }
 				}
@@ -17,7 +17,7 @@ stages {
             steps {
                 script{
 			    echo 'Building..'
-		             sleep 120
+		             sleep 20
 		    	  }
 				 }
 				}
@@ -27,7 +27,7 @@ stages {
             steps {
                  script{
 			    echo 'Building..'
-		             sleep 120
+		             sleep 20
 		    	  }
 				 }
 				}		
