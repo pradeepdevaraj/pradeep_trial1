@@ -1,8 +1,9 @@
 pipeline {
 agent none
-stages {
+stages { 
+  parallel {
         stage('Build') {
-		parallel {
+		
 		 agent { label 'master' }
             steps {
                 
@@ -12,22 +13,20 @@ stages {
 		    	  }
 				 }
 		}
-				}
+				
 				
 		stage('deploy') {
-			parallel {
+			
 		 agent { label 'master' }
             steps {
                 script{
 			    echo 'Building..'
 		             sleep 20
 		    	  }
-	    }
 				 }
 				}
-				
 		stage('test') {
-			parallel {
+			
 		 agent { label 'master' }
             steps {
                  script{
@@ -36,10 +35,9 @@ stages {
 		    	  }
 				 }
 				}		
-				
 		}	
 		}
-	}
+		}
              
 
 
