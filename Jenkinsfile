@@ -6,6 +6,7 @@ stages {
         stage('Build') {
 		
 		 agent { label 'master' }
+		 steps ('all parallel shit') {
 		 parallel {
 		 
             steps ('build 1.1') {
@@ -22,6 +23,7 @@ stages {
 			    echo 'Building 22..'
 		             sleep 20
 		    	  }
+				}
 				}
 			}
 		}
