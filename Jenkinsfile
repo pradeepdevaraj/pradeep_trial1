@@ -1,7 +1,7 @@
 pipeline {
 agent none
 stages { 
-	stage ('all shit') {
+	
   
         stage('Build') {
 		parallel {
@@ -49,6 +49,6 @@ stages {
 				}		
 		}	
 		}
-		}
+		
 		
 	
