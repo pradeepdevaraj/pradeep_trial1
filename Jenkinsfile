@@ -2,7 +2,8 @@ pipeline {
 agent none
 stages { 
 	
-  
+	
+	
         stage('Build') {
 		 agent { label 'master' }
 		steps ('build 1.1') {
